@@ -168,7 +168,11 @@ void menu() {
 int main() {
 	menu();
 	start();
-	
+	if ((fp = fopen("D:\\zuoye.txt", "w")) == NULL)
+	{
+		printf("不能打开文件！\n");
+		exit(0);
+	}
 	for (int j = 1; j <= num; j++) {
 		randnumber();
 		randsymbol();
@@ -184,11 +188,7 @@ int main() {
 			create_express3(j);
 		}
 	}
-	if ((fp = fopen("D:\\zuoye.txt", "w")) == NULL)
-	{
-		printf("不能打开文件！\n");
-		exit(0);
-	}
+	
 	fclose(fp);
 	return 0;
 }
