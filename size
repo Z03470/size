@@ -30,7 +30,7 @@ void start() {
 	cin >> symbol_type[3];
 	cout << "希望算式中出现的最大数值\n";
 	cin >> maxnum;
-	cout << "需要括号请输入0，否则1\n";
+	cout << "不需要括号请输入0，否则1\n";
 	cin >> brackets;
 	cout << "需要整数请输入0，小数输入1\n";
 	cin >> integer;
